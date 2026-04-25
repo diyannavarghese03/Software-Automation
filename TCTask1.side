@@ -1,0 +1,89 @@
+{
+  "id": "3b63b5b0-723d-4a78-a02d-c05c0a2886bf",
+  "version": "2.0",
+  "name": "TCTask1",
+  "url": "https://the-internet.herokuapp.com",
+  "tests": [{
+    "id": "ab42571c-db6d-4f64-9537-d75da582b739",
+    "name": "TCAutomation1",
+    "commands": [{
+      "id": "1e0c62c8-8d80-4d15-bfd0-5fde5b5ec955",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5665c9a0-b13b-419d-aa3e-f5e7bf469267",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4bf68eab-6057-4a0a-819a-0b40b9d2667a",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=username",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "aab00435-6aa0-47f0-b84d-d846a682000a",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [],
+      "value": "tomsmith"
+    }, {
+      "id": "5affe44a-eac8-4827-b096-81fad087f8c1",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [],
+      "value": "SuperSecretPassword!"
+    }, {
+      "id": "a08f5441-6492-44d1-8814-07d7c916fe0d",
+      "comment": "",
+      "command": "click",
+      "target": "css=button[type='submit']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "88dea59c-b21f-4dc4-9358-2027cbddd690",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button.secondary.radius",
+      "targets": [
+        ["css=.fa", "css:finder"],
+        ["xpath=//form[@id='login']/button/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"],
+        ["xpath=//i[contains(.,' Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d98be057-70a4-414c-8c2c-5015d7f471f9",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h2",
+      "targets": [],
+      "value": "Secure Area"
+    }, {
+      "id": "be6377d0-48e5-49a6-b6a2-f29e9f68db93",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.flash.success",
+      "targets": [],
+      "value": "30000"
+    }]
+  }],
+  "suites": [{
+    "id": "4f874b52-71ba-4b8a-880c-1277a18122b1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ab42571c-db6d-4f64-9537-d75da582b739"]
+  }],
+  "urls": ["https://the-internet.herokuapp.com/"],
+  "plugins": []
+}
